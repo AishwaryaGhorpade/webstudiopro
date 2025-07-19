@@ -600,6 +600,20 @@ START: back to top CSS
     left: 0;
   }
 }
+
+.info-header{
+background-color: #070b3b;
+/* background-color: var(--tj-color-theme-primary); */
+height: 40px;
+}
+.info-header h3{
+  color: white;
+  font-size:18px;
+  font-weight: var(--tj-fw-bold);
+  line-height: var(--tj-lh-h3);
+  margin-bottom: 0;
+}
+
 .cd-words-wrapper {
   display: inline-block;
   position: relative;
@@ -1844,7 +1858,7 @@ START: Section Headign CSS
 }
 .section-heading__title {
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 35px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .section-heading__title {
@@ -8423,7 +8437,24 @@ START: Service CSS
  .service {
     padding: 70px 0;
     position: relative;
-    background-color: var(--tj-color-theme-secondary);
+    background-color: var(--tj-color-theme-bg1);
+}
+.service ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background:  url(../img/funfact/funfact-bg.png) no-repeat top left;
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.service .service__icon img{
+height: 50px;
+width: 50px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .service {
@@ -8686,7 +8717,7 @@ START: Portfolio CSS
 .portfolio__inner {
   background-color: var(--tj-color-theme-bg1);
   border-radius: 24px;
-  padding: 120px 0;
+  padding: 70px 0;
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -9506,7 +9537,7 @@ START: Portfolio CSS
 START: Faq CSS
 ----------------------------------------*/
 .faq {
-  padding: 120px 0;
+  padding: 70px 0;
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -10311,7 +10342,7 @@ START: Process CSS
 START: Testimonials CSS
 ----------------------------------------*/
 .testimonials {
-  padding: 120px 0;
+  padding: 70px 0;
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -10330,7 +10361,7 @@ START: Testimonials CSS
   }
 }
 .testimonials .section-heading--spacing {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .testimonials .section-heading__title {
   margin-bottom: 0;
