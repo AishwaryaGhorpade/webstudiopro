@@ -3196,15 +3196,21 @@ START: Footer CSS
     margin-bottom: 15px;
   }
 }
+.footer .footer__main {
+  padding-bottom: 20px;
+}
 .footer__widget.footer__info .footer__info__list ul li {
   position: relative;
   margin-bottom: 0;
 }
 .footer__widget.footer__info .footer__info__list ul li .link {
   color: var(--tj-color-heading-primary);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: var(--tj-fw-bold);
   font-family: var(--tj-ff-heading);
+}
+.footer__widget.footer__info .footer__info__list ul li .link i{
+  color: #054ce0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .footer__widget.footer__info .footer__info__list ul li .link {
@@ -6968,12 +6974,7 @@ START: About CSS
   }
 }
 .about--1 {
-    padding: 100px 0 70px;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .about {
-    padding-bottom: 130px;
-  }
+    padding: 70px 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about {
@@ -7200,7 +7201,6 @@ START: About CSS
   display: none;
 }
 .about--4 {
-  padding: 120px 0 0;
   overflow: hidden;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -7223,7 +7223,7 @@ START: About CSS
   z-index: 0;
   background-color: var(--tj-color-theme-bg1);
   border-radius: 24px;
-  padding: 120px 0;
+  padding: 70px 0;
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -10105,7 +10105,7 @@ START: Process CSS
   }
 }
 .process-2 {
-  padding: 120px 0;
+  padding: 70px 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .process-2 {
