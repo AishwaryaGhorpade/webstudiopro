@@ -12767,8 +12767,9 @@ START: Team Details CSS
 START: Package CSS
 ----------------------------------------*/
 .package {
-  padding: 120px 0;
+  padding: 70px 0;
   position: relative;
+  background-color: var(--tj-color-theme-bg1);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .package {
@@ -12786,9 +12787,24 @@ START: Package CSS
   }
 }
 .package .section-heading {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 @media (max-width: 575px) {
   .package .section-heading {
@@ -13417,7 +13433,7 @@ START: Award CSS
 START: Blog Details CSS
 ----------------------------------------*/
 .tj-blog-section {
-  padding: 120px 0;
+  padding: 70px 0;
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
